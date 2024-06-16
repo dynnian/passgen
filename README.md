@@ -35,7 +35,7 @@ To use passgen, open your terminal and execute the program with the desired
 options.
 
 ```bash
-passgen [OPTIONS]
+./passgen [OPTIONS]
 ```
 
 ## Options
@@ -68,34 +68,34 @@ passgen [OPTIONS]
 
 1. Generate a default password:
 
-```bash
-passgen
-```
+    ```bash
+    ./passgen
+    ```
 
-This will generate a 24-character password with a mix of lowercase letters,
-uppercase letters, digits, and special characters.
+    This will generate a 24-character password with a mix of lowercase letters,
+    uppercase letters, digits, and special characters.
 
 2. Generate a password with specific options:
 
-```bash
-passgen -L 12 -lud
-```
+    ```bash
+    ./passgen -L 12 -lud
+    ```
 
-This will generate a 12-character password with only lowercase letters,
-uppercase letters, digits, and no special characters.
+    This will generate a 12-character password with only lowercase letters,
+    uppercase letters, digits, and no special characters.
 
 3. Display help message:
 
-```bash
-passgen -h
-```
+    ```bash
+    passgen -h
+    ```
 
-This will display the usage and available options.
+    This will display the usage and available options.
 
 4. Display version:
 
-```bash
-passgen -v
-```
-
-This will display the version of Passgen.
+    ```bash
+    passgen -v
+    ```
+    
+    This will display the version of Passgen.
