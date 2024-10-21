@@ -1,0 +1,48 @@
+.TH PASSGEN 1 "October 2024" "v0.1" "Passgen Manual"
+.SH NAME
+passgen \- Generate passwords with ease
+.SH SYNOPSIS
+.B passgen
+[\fIOPTIONS\fR]
+.SH DESCRIPTION
+.B passgen
+is a command-line utility for generating random passwords with customizable options such as the length of the password and inclusion of upper-case letters, lower-case letters, digits, and special characters.
+
+If no options are provided, a default 24-character password containing all character types is generated.
+
+.SH OPTIONS
+.TP
+.BR -L ", " --length=\fILENGTH\fR
+Specify the length of the generated password. The length must be between 5 and 4096 characters. The default is 24 characters.
+.TP
+.BR -l ", " --lower-case
+Include lowercase letters in the password.
+.TP
+.BR -u ", " --upper-case
+Include uppercase letters in the password.
+.TP
+.BR -d ", " --digits
+Include digits (0-9) in the password.
+.TP
+.BR -s ", " --special
+Include special characters in the password.
+.TP
+.BR -h ", " --help
+Display this help message and exit.
+.TP
+.BR -v ", " --version
+Display version information and exit.
+
+.SH EXAMPLES
+.B passgen
+.br
+Generates a 24-character password using all character types.
+
+.B passgen \-L 16 \-l \-u
+.br
+Generates a 16-character password with lowercase and uppercase letters.
+
+.SH AUTHOR
+Clay Gomera
+.SH LICENSE
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
